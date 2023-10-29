@@ -1,0 +1,100 @@
+body {
+    background-image:url(https://getwallpapers.com/wallpaper/full/1/a/b/646672.jpg);
+}
+.img-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha as imagens à esquerda */
+    justify-content: flex-start; /* Alinha as imagens ao topo */
+    position: absolute; /* Position the container at the top of the page */
+    overflow: hidden;
+}
+.img-container span {
+    position: absolute;
+    border-radius: 50%;
+    /* To make it round */
+    background-color: rgba(0, 0, 0, 0.3);
+
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    /* for positioning */
+    margin-left: -50px;
+
+    animation: ripple 1s;
+    opacity: 0;
+}
+
+.orange-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 165px;
+    height: 100%;
+    background-color: rgb(105,63,15,255);
+    z-index: -1;
+}
+
+.nigger {
+    display:flex;
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    border: 3px solid rgb(105,63,15,255);
+    margin-bottom: 10px; /* Adicione espaçamento inferior entre as imagens */
+    margin-left: 10px;
+    overflow:hidden
+}
+.text-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10px 250px 0;
+    text-align: left;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.ampliada {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 8px;
+}
+
+/* https://github.com/BaseMax/RippleEffectCSS */
+[effect=ripple] {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+[effect="ripple"]:before {
+    content: "";
+    display: block; /* Change display to block */
+    border-radius: 50%; /* Use border-radius to create a circle */
+    position: absolute;
+    pointer-events: none;
+    transform-origin: center;
+    top: calc(var(--y) * 1px);
+    left: calc(var(--x) * 1px);
+    width: calc(var(--d) * 1px);
+    height: calc(var(--d) * 1px);
+    background: var(--ripple-background, white);
+    transform: translate(-50%, -50%) scale(var(--s, 1));
+    opacity: calc(var(--o, 1) * var(--ripple-opacity, 0.3));
+    transition: calc(var(--t, 0) * var(--ripple-duration, 600ms)) var(--ripple-easing, linear);
+}
+
+.niggarman {
+    background-color: #ffffff;
+    border-radius: 50px;
+    margin: 100px 400px 0;
+    text-align: center;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 40px;
+}
+
+
